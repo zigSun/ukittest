@@ -1,0 +1,12 @@
+@import '../../vars.scss';
+
+.content {
+    margin-left: $menu_width;
+    padding: 0 8px;
+}
+
+@media (max-width: 1024px) {
+    .content {
+        margin-left: auto;
+    }
+}

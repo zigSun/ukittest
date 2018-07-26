@@ -1,0 +1,20 @@
+.task-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    .task-content {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .task-container {
+        height: auto;
+        .task-content {
+            flex-direction: column;
+        }
+    }
+    
+}

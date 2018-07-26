@@ -1,0 +1,52 @@
+@import '../../vars.scss';
+
+.menu {
+    .sidebar {
+        display : block;
+        position: fixed;
+        height: 100vh;
+        width : $menu_width;
+        border-right: 5px solid black;
+        padding: 0 8px;
+        box-sizing: border-box;
+    }
+    .hamburger-menu {
+        display: none;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        &:hover {
+            cursor: pointer;
+        }
+        .links {
+            position: absolute;
+            top : 0px;
+            right : 50px;
+            width : 250px;
+            background-color: white;
+        }
+    }
+    a {
+        display: block;
+        box-sizing: content-box;
+        border : 2px solid black;
+        height: 30px;
+        margin: 5px;
+        padding: 8px 0 0 16px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .menu{
+        .sidebar {
+            display: none;
+        }
+        .hamburger-menu {
+            display: block;
+        }
+    }
+    
+}
